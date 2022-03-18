@@ -1,0 +1,66 @@
+/*Estilos da página index.html*/
+.center{
+    text-align: center;
+}
+.justify{
+    text-align: justify;
+}
+.container{
+    display: flex;
+    flex-flow: row; /*Regula com o tamanho da tela*/
+    justify-content: center;
+    align-items: center;
+}
+.letra-branca{
+    color: beige;
+}
+
+#menu li{
+    display: inline; /*Já trou os pontos e deixou alinhado*/
+    padding: 100px;
+    font-size: 20px;
+}
+#menu li a{
+    text-decoration: none;
+    color:white;
+}
+#menu li a:hover{   /* colocar o mouse em cima troca de cor*/
+    color:blueviolet;
+}
+.p-30{
+    padding: 30px;
+}
+.br-50{
+    border-radius: 15%;
+}
+.tm-social{
+    width: 40px;
+    height: 40px;
+}
+.mb-50{
+    margin: 50px;
+}
+.wh{
+    width: 500px;
+    height: 300px;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,5,39,1) 9%,
+     rgba(16,84,107,1) 57%, rgba(0,141,170,1) 100%);
+}
+
+/*
+Estilos da página sobre.html
+*/
+
+
+
+
+/*
+Estilos da página contato.html
+*/
+
+.ml-50{
+    margin-left: 50px;
+}
