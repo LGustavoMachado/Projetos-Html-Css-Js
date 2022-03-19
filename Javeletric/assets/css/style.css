@@ -11,10 +11,24 @@
     justify-content: center;
     align-items: center;
 }
+.containerFooter{
+    display: flex;
+    flex-flow: row; /*Regula com o tamanho da tela*/
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+.distance1{
+    padding: 160px 100px 100px 0 ;
+}
+
 .letra-branca{
     color: beige;
 }
-
+#logoTipo{
+    position:absolute;
+    padding: 20px;
+}
 #menu li{
     display: inline; /*Já trou os pontos e deixou alinhado*/
     padding: 100px;
@@ -39,6 +53,11 @@
 }
 .mb-50{
     margin: 50px;
+}
+.imagemSombra:hover{
+    box-shadow: 20px 30px 50px #000000;
+    transform: scale(1.1);
+    transition: 2s all;
 }
 .wh{
     width: 500px;

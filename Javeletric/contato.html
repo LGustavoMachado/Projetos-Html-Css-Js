@@ -8,10 +8,10 @@
     <title>Contato Javeletric</title>
 </head>
 <body class="letra-branca">
-    <header class="container">
-        <img width="200" height="200" src="assets/img/javeletric amarelo (2).png" alt="">
-        <nav>
-            <ul id="menu">
+    <header>
+        <img id= "logoTipo" width="200" height="200" src="assets/img/javeletric amarelo (2).png" alt="">
+        <nav class="container">
+            <ul class= "distance1" id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -26,16 +26,23 @@
         <div>
             <form>
                 <label for="nome">Nome:</label><br>
-                <input type="text" id="nome">
+                <input type="text" id="nome" onkeyup="validarNome()">
+                <div id="txtNome"></div>
+
                 <br>
                 <label for="email">E-mail:</label><br>
-                <input type="text" id="nome">
+                <input type="email" id="email" onkeyup='validaEmail()'>
+                <div id="txtEmail"></div>
                 <br>
+
                 <label for="assunto">Assunto:</label><br>
-                <textarea name="assunto" id="assunto" cols="60" rows="10"></textarea>
+                <textarea name="assunto" id="assunto" cols="61" rows="9" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+
                 <br>
+                <input type="submit" onclick="enviar()"> <!--On click cada vez que clicar no botao -->
                 <br>
-                <button>Enviar</button>
+               
              </form>
         </div>
         <div class="ml-50">
@@ -45,7 +52,10 @@
         <div>
             <h3>Deserto do Atacama - Chile</h3>
         
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7485.186945420848!2d-69.48244793248038!3d-22.771284562019424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96ac2801b319c631%3A0x7cb9e03f0b3de17c!2sCerro%20Dominador%20-%20Complejo%20Solar!5e1!3m2!1spt-BR!2sbr!4v1647567508774!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7485.186945420848!2d-69.48244793248038!3d-22.771284562019424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96ac2801b319c631%3A0x7cb9e03f0b3de17c!2sCerro%20Dominador%20-%20Complejo%20Solar!5e1!3m2!1spt-BR!2sbr!4v1647567508774!5m2!1spt-BR!2sbr" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" 
+            onmousemove="zoom()"
+            onmouseout="mapaNormal()"
+             id ='mapa'></iframe>
         </div>   
 
     </div>
@@ -60,8 +70,10 @@
             <a href="index.html" target="_blank"><img class="tm-social p-30" src="assets/img/instagram (1).png" alt="Logo do Instagram"></a>
         </div>
 
-        <p class="center">Todos os direitos reservador: Luiz G M Santos &copy</p>
+        <p class="center">Todos os direitos reservado: Luiz G M Santos &copy</p>
     </footer>
+
+    <script src="assets/Javascript/script.js"></script>
 
 </body>
 </html>
