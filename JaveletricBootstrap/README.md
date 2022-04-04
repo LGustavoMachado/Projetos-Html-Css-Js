@@ -23,7 +23,7 @@
   
   ![image](https://user-images.githubusercontent.com/91089946/161456480-3cb9987d-fe2c-4e68-a944-155e530dc8ae.png)
 
-  <h3> Contato e rodapé </h3>
+  <h3> Contato, rodapé e validação para contato. </h3>
   
   ![image](https://user-images.githubusercontent.com/91089946/161456524-a047c795-d541-48fe-8db3-f68e0e89c8da.png)
 
